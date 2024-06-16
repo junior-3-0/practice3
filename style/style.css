@@ -1,0 +1,179 @@
+@import url(../fonts/fonts.css);
+
+html {
+  box-sizing: border-box;
+  font-family: "TT Lakes", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: "TT Lakes", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.title {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.02rem;
+  font-weight: 400;
+  color: #7e7e82;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.repair-section__header {
+  background: linear-gradient(
+    35deg,
+    rgb(248, 248, 248),
+    rgb(255, 255, 255) 98.614%
+  );
+  padding: 1.6rem;
+  border-top: 0.2rem solid #d9fff5;
+}
+
+.repair-section__body {
+  background: #f8f8f8;
+  padding-bottom: 3.4rem;
+  overflow: hidden;
+  padding: 1.6rem 1.6rem 3.4rem;
+}
+
+.swiper {
+  max-width: 24rem;
+  margin: 0;
+  overflow: visible;
+  margin-left: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.swiper-wrapper {
+  max-width: 24rem;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.swiper-pagination {
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #dddddd;
+}
+
+.swiper-pagination-bullet-active {
+  background: #b5b6bc;
+}
+
+.card {
+  padding: 0 1.6rem;
+  height: 7.2rem;
+  width: min(75%, 22.4rem);
+  background: #ffffff;
+  border: 0.1rem solid rgb(234, 234, 234);
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+}
+.card--hidden {
+  display: none;
+}
+.card__btn {
+  width: 4rem;
+  height: 4rem;
+  border: 0.2rem solid #ff3e79;
+  border-radius: 50%;
+  background: url("../images/dropdown.svg") no-repeat 50% 50%;
+  margin-left: auto;
+}
+
+.repair-section__cards-no-swiper {
+  display: none;
+  flex-wrap: wrap;
+  row-gap: 1.6em;
+  column-gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.show-more {
+  display: none;
+  gap: 0.9rem;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: -0.02rem;
+  transition: transform .3s;
+}
+.show-more__img--rotate {
+  transform: rotate(180deg);
+}
+.show-more:hover  .show-more__img {
+    transform: scale(1.05);
+}
+.show-more:hover {
+    transform: scale(1.05);
+}
+.show-more:active  .show-more__img {
+    transform: scale(.95);
+}
+.show-more:active {
+    transform: scale(.95);
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination,
+  .swiper {
+    display: none;
+  }
+  .repair-section__cards-no-swiper {
+    display: flex;
+  }
+  .repair-section__body {
+    padding: 2.4rem 2.4rem 3.4rem;
+  }
+  .repair-section__header {
+    padding: 1.6rem 2.4rem;
+  }
+  .show-more {
+    display: flex;
+  }
+  .show-more--hidden {
+    display: none;
+  }
+}
+@media (min-width: 1120px) {
+  .repair-section__body {
+    padding: 2.4rem 3.2rem 3.4rem;
+  }
+  .repair-section__header {
+    padding: 1.6rem 3.2rem;
+  }
+  .repair-section__cards-no-swiper {
+    column-gap: 3.2rem;
+  }
+  .show-more {
+    display: flex;
+  }
+  .show-more--hidden {
+    display: none;
+  }
+  .card {
+    width: 24rem;
+  }
+}
