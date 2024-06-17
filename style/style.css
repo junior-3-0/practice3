@@ -135,9 +135,6 @@ body {
 .show-more:active {
   transform: scale(0.95);
 }
-/* .vdfvf{
-    margin: 0;
-} */
 
 @media (min-width: 768px) {
   .swiper-pagination,
