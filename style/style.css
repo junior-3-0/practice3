@@ -118,23 +118,26 @@ body {
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: -0.02rem;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 .show-more__img--rotate {
   transform: rotate(180deg);
 }
-.show-more:hover  .show-more__img {
-    transform: scale(1.05);
+.show-more:hover .show-more__img {
+  transform: scale(1.05);
 }
 .show-more:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
-.show-more:active  .show-more__img {
-    transform: scale(.95);
+.show-more:active .show-more__img {
+  transform: scale(0.95);
 }
 .show-more:active {
-    transform: scale(.95);
+  transform: scale(0.95);
 }
+/* .vdfvf{
+    margin: 0;
+} */
 
 @media (min-width: 768px) {
   .swiper-pagination,
